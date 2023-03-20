@@ -1,0 +1,101 @@
+/* common.css */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+
+/* base */
+* { margin: 0; padding: 0; box-sizing: border-box; font-size: 16px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #000; }
+li { list-style: none; }
+a { text-decoration: none; }
+address { font-style: normal; }
+h2 { font-weight: 700; color: #333; }
+
+/* common */
+/* header */
+header { position: fixed; left: 0; right: 0; top: 0; padding: 20px 0 40px; z-index: 100; }
+header h1 { width: 200px; height: 37px; padding-bottom: 20px; margin: 0 auto; }
+header h1 a { display: block; width: 100%; height: 37px; }
+header h1 a img { width: 200px; height: 37px; }
+
+
+/* PC-최소 */
+@media screen and (min-width: 1024px) {
+    /* header */
+    header .wrap { position: relative; }
+    header .tnav { position: absolute; right: 0; top: 0; padding-top: 5px; }
+    header .tnav li { float: left; }
+    header .search { margin-right: 5px; }
+    header .search img, header .user img { width: 25px; height: 25px; }
+    header nav { padding-top: 25px; }
+    header nav ul { display: flex; justify-content: center; }
+    header nav ul li { margin: 0 40px; }
+    header nav ul li a { font-size: 18px; color: #000; }
+
+    header .t-menu { display: none; }
+
+    /* footer */
+    footer h1 { padding-top: 20px; }
+    footer h1 img { width: 13rem; }
+    footer p { color: #fff; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    footer address { color: #fff; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    footer .wrap:last-child { padding-bottom: 20px; }
+
+    /* panel */
+    .panel { display: none; }
+}
+
+/* large pc */
+@media screen and (min-width: 1280px) {
+    /* header */
+    header .wrap { width: 1280px; margin: 0 auto; }
+
+    /* footer */
+    footer .wrap { width: 1280px; margin: 0 auto; }
+}
+
+
+/* 태블릿 - 0부터~1023까지 */
+@media screen and (max-width: 1023px) {
+    /* header */
+    header .wrap { position: relative; }
+    header .tnav { position: absolute; right: 0; top: 0; padding-top: 5px; padding-right: 20px;}
+    header .tnav li { float: left; }
+    header .search { margin-right: 5px; }
+    header .search img, header .user img { width: 25px; height: 25px; }
+    header .t-menu { position: absolute; left: 0; top: 0; display: block; padding-top: 5px; padding-left: 20px; }
+    header .t-menu img { width: 25px; height: 25px; cursor: pointer; }
+
+    header nav { display: none; }
+
+    /* panel */
+    .panel { position: fixed; z-index: 101; width: 100%; padding: 20px 0 20px; background-color: rgba( 255, 255, 255, 1); }
+    .panel h1 { width: 200px; height: 37px; margin: 0 auto; margin-bottom: 20px; }
+    .panel h1 a { display: block; width: 100%; height: 100%; }
+    .panel h1 img { width: 200px; height: 37px; }
+    .panel .close { position: absolute; left: 0; top: 0; display: block; padding-top: 25px; padding-left: 20px; }
+    .panel .close img { width: 25px; height: 25px; cursor: pointer; }
+    .panel ul { width: 50%; margin: 0 auto; text-align: center; line-height: 3rem; }
+    .panel ul li a { font-size: 1.5rem; }
+
+    /* footer */
+    footer .wrap { padding-left: 5%;}
+    footer h1 { padding-top: 20px; }
+    footer h1 img { width: 13rem; }
+    footer p { color: #fff; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    footer address { color: #fff; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    footer .wrap:last-child { padding-bottom: 20px; }
+}
+/* 모바일 - 0부터~540까지 */
+@media screen and (max-width: 540px) {
+
+}
+
+/* 모바일- 최소사이즈 */
+@media screen and (max-width: 320px) {
+    /* header */
+    header h1 { width: 120px; height: 22px; padding-top: 6px; }
+    header h1 a img { width: 120px; height: 22px; }
+
+    /* panel */
+    .panel h1 { width: 120px; height: 22px; padding-top: 6px; }
+    .panel h1 img { width: 120px; height: 22px; }
+}

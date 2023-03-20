@@ -1,0 +1,159 @@
+/* main.css */
+
+/* common */
+
+
+
+
+/* PC-최소 */
+@media screen and (min-width: 1024px) {
+  * { font-size: 14px; }
+  /* popup */
+  .popup{ width: 400px; height: 450px; background-color: #d8e0e6; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; padding-top: 15px; box-sizing: border-box; z-index: 10000; border-radius: 3%; }
+  .popup .linebox{ width: 370px; height: 420px; background-color: #fff; margin: 0 auto; padding-top: 15px; box-sizing: border-box; border-radius: 3%; }
+  .popup .linebox h1{ width: 100%; height: 70px; background-repeat: no-repeat; background-position: center; background-image: url(../images/logo.png); background-size: 150px; text-indent: -999em; margin-bottom: 15px;  }
+  .popup .linebox p{ font-size: 13px; color: #333; font-weight: 400; text-align: center; line-height: 35px; margin-bottom: 40px;  }
+  .popup .linebox p .color{ font-size: 14px; font-weight: 400; color: #61798b; }
+  .popup .linebox .today{ float: left; font-size: 12px; font-weight: 400; margin-left: 15px;  }
+  .popup .linebox .popupclose{ float: right; font-size: 12px; font-weight: 400; margin-right: 15px; }
+
+  /* slide */
+  .mslide a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: bottom center; background-size: cover; }
+  .mslide .slide01 a { background-image: url(../images/main_01.jpg); padding-top: 60vh; }
+  .mslide .slide02 a { background-image: url(../images/main_02.jpg); padding-top: 60vh; padding-left: 24vw; }
+  .mslide .slide03 a { background-image: url(../images/main_03.jpg); padding-top: 61vh; padding-left: 23vw; }
+  .mslide .slide01 p { text-align: center; color: #000; }
+  .mslide .slide01 p:first-child { font-size: 2.87rem; font-weight: 500; line-height: 60px; margin-bottom: 3vh; }
+  .mslide .slide01 p:last-child { font-size: 1.12rem; line-height: 28px; }
+  .mslide .slide02 p:first-child { font-size: 2.87rem; font-weight: 500; line-height: 60px; margin-bottom: 3vh; }
+  .mslide .slide02 p:last-child { font-size: 1.12rem; line-height: 28px; }
+  .mslide .slide03 p:first-child { font-size: 2.87rem; font-weight: 500; line-height: 60px; margin-bottom: 3vh; }
+  .mslide .slide03 p:last-child { font-size: 1.12rem; line-height: 28px; }
+
+  /* best item */
+  .item { position: relative; background-image: url(../images/item_bg.png); background-repeat: no-repeat; background-position: right 1220px top 100px; }
+  .item h2 { width: 100%; height: 100%;  padding-top: 28vh; font-size: 2.25rem; text-transform: uppercase; }
+  .item .swiper { position: absolute; width: 100%; right: -100px; top: 300px; }
+  .item li a { display: block; position: relative; }
+  .item li a:after { content: ''; transition: 1s; text-align: center; padding: 50% 5px 5px; position: absolute; width: 100%; height: 98%;  left: 0; top: 0; background-color: rgba(0, 0, 0, 0.5); box-sizing: border-box; color: #fff; font-size: 1em; opacity: 0; }
+  .item li img { width: 100%; }
+  
+  .item li a:hover:after { opacity: 1; }
+  .item .item_01 a:hover:after { content: '라피타 IPL 레이저 제모의료기기 오토샷 JOC-9000'; }
+  .item .item_02 a:hover:after { content: '[3초 속눈썹펌] 라피타 아이돌 히팅 래쉬펌 속눈썹고데기'; }
+  .item .item_03 a:hover:after { content: '[블랙헤드 모공케어]라피타 H2 수소 아쿠아 워터 필링기 피지흡입기 JOC-H2'; }
+  .item .item_04 a:hover:after { content: '라피타 5초 새치커버 타투 헤어틴트 /NO 염색약 새치커버 틴트 스틱 10ml'; }
+  
+  /* Story */
+  .story .wrap { width: 100%; height: 100%; padding-top: 20vh; }
+  .story .t-story, .story .m-story { display: none; }
+  .story picture { width: 100%; height: 100%; }
+  .story picture img { width: 100%; }
+  .story h2 { font-size: 2.25rem; text-transform: uppercase; margin-bottom: 30px; }
+  .story h3 { font-size: 1.25rem; text-indent: 10px; }
+
+  /* video */
+  .video .wrap { width: 100%; height: 100%; padding-top: 20vh; }
+  .video iframe { width: 100%; height: 500px; }
+}
+
+/* large pc */
+@media screen and (min-width: 1280px) {
+  * { font-size: 16px; }
+  /* best item */
+  .item h2 { width: 1280px; margin: 0 auto; padding-top: 190px; }
+  .item .swiper { width: 1380px; }
+  .item li a { width: 330px; height: 408px; }
+  .item li a:after { height: 400px; font-size: 20px; }
+  .item li img { width: 330px; height: 400px; }
+
+  /* Story */
+  .story .wrap { width: 1280px; height: 100%; margin: 0 auto; padding-top: 20vh; }
+  .story picture { width: 1280px; height: 430px; }
+
+  /* video */
+  .video .wrap { width: 1280px; height: 100%; margin: 0 auto; }
+  .video iframe { width: 1280px; height: 600px; }
+}
+
+@media screen and (min-width: 1601px) {
+  .item { background-position: right 1290px top 100px; }
+    /* 가로사이즈 1601px 이상일 때 .item 이미지 spaceBetween 40 이하는 20 */
+  .item .swiper { width: 1440px; }
+
+}
+
+/* 태블릿 - 0부터~1023까지 */
+@media screen and (max-width: 1023px) {
+  * { font-size: 12px; }
+
+  /* popup */
+  .popup{ width: 400px; height: 450px; background-color: #e3ecf0; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; padding-top: 15px; box-sizing: border-box; z-index: 10000; border-radius: 2%; }
+  .popup .linebox{ width: 370px; height: 420px; background-color: #fff; margin: 0 auto; padding-top: 15px; box-sizing: border-box; border-radius: 2%; }
+  .popup .linebox h1{ width: 100%; height: 70px; background-repeat: no-repeat; background-position: center; background-image: url(../images/logo.png); background-size: 150px; text-indent: -999em; margin-bottom: 15px;  }
+  .popup .linebox p{ font-size: 13px; color: #333; font-weight: 400; text-align: center; line-height: 35px; margin-bottom: 40px;  }
+  .popup .linebox p .color{ font-size: 14px; font-weight: 400; color: #7795a1; }
+  .popup .linebox .today{ float: left; font-size: 12px; font-weight: 400; margin-left: 15px;  }
+  .popup .linebox .popupclose{ float: right; font-size: 12px; font-weight: 400; margin-right: 15px; }
+
+   /* slide */
+   .mslide a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: bottom center; background-size: cover; }
+   .mslide .slide01 a { background-image: url(../images/main_01.jpg); padding-top: 60vh; }
+   .mslide .slide02 a { background-image: url(../images/main_02.jpg); padding-top: 60vh; padding-left: 10vw; background-position: 75% bottom; }
+   .mslide .slide03 a { background-image: url(../images/main_03.jpg); padding-top: 62vh; padding-left: 60vw; background-position: 98% bottom; }
+   .mslide .slide01 p { text-align: center; color: #000; }
+   .mslide .slide01 p:first-child, .mslide .slide02 p:first-child, .mslide .slide03 p:first-child  { font-size: 2.87rem; font-weight: 500; line-height: 45px; margin-bottom: 3vh; }
+   .mslide .slide01 p:last-child, .mslide .slide02 p:last-child, .mslide .slide03 p:last-child { font-size: 1.12rem; line-height: 22px; }
+
+   /* best item */
+  .item { position: relative; background-image: url(../images/item_bg.png); background-repeat: no-repeat; background-position: left 28vw; padding: 0 5%; background-size: 40vw;}
+  .item h2 { width: 100%; height: 100%;  padding-top: 40vw; font-size: 2.25rem; text-transform: uppercase; }
+  .item .swiper { position: absolute; width: 100%; right: -10vw; top: 50vw; }
+  .item li a { display: block; position: relative; }
+  .item li img { width: 100%; }
+
+  /* Story */
+  .story .wrap { width: 90%; height: 100%; padding-top: 10vw; margin: 0 auto; }
+  .story .p-story, .story .m-story { display: none; }
+  .story picture { width: 90%; height: 100%;  }
+  .story picture img { width: 100%; }
+  .story h2 { font-size: 2.25rem; text-transform: uppercase; padding-top: 20vw; padding-bottom: 3vw; }
+  .story h3 { font-size: 1.25rem; text-indent: 10px; margin-top: 10px;}
+
+  /* video */
+  .video .wrap { width: 100%; height: 100%; padding-top: 30vh; }
+  .video iframe { width: 100%; height: 500px; }
+   
+}
+/* 모바일 - 0부터~540까지 */
+@media screen and (max-width: 540px) {
+  * { font-size: 10px; }
+  /* popup */
+  .popup{ display: none; }
+
+  /* slide */
+  .mslide .slide02 a { background-position: 75% bottom; }
+  .mslide .slide03 a { background-position: 75% bottom; padding-left: 14vw; }
+
+  /* best item */
+  .item { background-size: 30vw; background-position: 5vw 30vw; }
+  .item .swiper { right: 0; top: 60vw; padding: 0 20px; }
+
+  /* Story */
+  .story .wrap { width: 90%; height: 100%; margin: 0 auto; }
+  .story .p-story, .story .t-story { display: none; }
+  .story .m-story { display: inline; }
+  .story picture { width: 100%;  }
+  .story picture img { width: 100%; }
+  .story h2 { font-size: 2.25rem; text-transform: uppercase; padding-top: 10vw; padding-bottom: 3vw; }
+  .story h3 { font-size: 1.25rem; text-indent: 10px; margin-top: 10px;}
+  .story p { text-indent: 0; padding-left: 10px;}
+
+  .video .wrap { padding-top: 13vh; }
+  .video iframe { width: 100%; height: 90%; }
+}
+
+/* 모바일- 최소사이즈 */
+@media screen and (max-width: 320px) {
+
+}
